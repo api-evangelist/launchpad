@@ -1,0 +1,38 @@
+name: Ubuntu Pro Plans
+method: searched
+source: https://ubuntu.com/pricing/pro?format=md
+audience: developer-api
+pricing_basis: per-seat
+published: true
+type: Pricing
+plans:
+  - name: Ubuntu Pro Workstation
+    price_text: "$25 per machine per year"
+    price: 25
+    currency: USD
+    billing_period: year
+    limits: []
+  - name: Ubuntu Pro Server
+    price_text: "$500 per machine per year"
+    price: 500
+    currency: USD
+    billing_period: year
+    limits: []
+  - name: Ubuntu Pro Enterprise Support
+    price_text: "$300 full support per machine per year"
+    price: 300
+    currency: USD
+    billing_period: year
+    limits: []
+  - name: Ubuntu Pro Server Enterprise Support
+    price_text: "$1,775 per machine per year"
+    price: 1775
+    currency: USD
+    billing_period: year
+    limits: []
+  - name: Ubuntu Pro Server Full Support
+    price_text: "$3,400 full support per machine per year"
+    price: 3400
+    currency: USD
+    billing_period: year
+    limits: []

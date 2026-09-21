@@ -1,23 +1,78 @@
 aid: launchpad
+
 name: Launchpad
-description: 'Launchpad is a company surfaced via the API Evangelist harvest backlog (source: version-control)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://launchpad.net/@@/launchpad-og-image.png
+
+description: 'Launchpad is a software collaboration platform operated by Canonical Ltd. It provides bug tracking, code hosting with Git, code reviews, package building, translations, mailing lists, answers, blueprints, and a web service API for developers to automate interactions with projects hosted on Launchpad.'
+
 url: https://raw.githubusercontent.com/api-evangelist/launchpad/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:version-control
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-21'
+
 modified: '2026-09-21'
+
 tags:
 - Company
-apis: []
+- Collaboration
+- OpenSource
+- BugTracking
+- CodeHosting
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/launchpad-plans-pricing.yml
+- type: Conformance
+  url: conformance/launchpad-conformance.yml
+- type: GitHubOrganization
+  url: https://github.com/launchpad
+- type: DomainSecurity
+  url: security/launchpad-domain-security.yml
 - type: Website
   url: https://launchpad.net/
+- type: Documentation
+  url: https://documentation.ubuntu.com/launchpad/
+- type: APIReference
+  url: https://api.launchpad.net/
+- type: GettingStarted
+  url: https://launchpad.net/+tour
+- type: Support
+  url: https://launchpad.net/feedback
+- type: Blog
+  url: https://blog.launchpad.net/
+- type: TermsOfService
+  url: https://ubuntu.com/legal/launchpad-terms-of-service
+- type: PrivacyPolicy
+  url: https://www.ubuntu.com/legal/dataprivacy
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: "API host https://api.launchpad.net returns 404 for common OpenAPI endpoints, and no machine‑readable contract was found."
+  evidence:
+    - url: https://api.launchpad.net/openapi.json
+      status: 404
+  checked: 2026-09-21
+x-enrichment:
+  date: '2026-09-21'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local

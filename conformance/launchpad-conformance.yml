@@ -1,0 +1,22 @@
+generated: '2026-09-21'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://ubuntu.com/security/security-standards?format=md
+sources:
+- https://ubuntu.com/security/security-standards?format=md
+- https://ubuntu.com/security/esm?format=md
+- https://ubuntu.com/security?format=md
+- https://ubuntu.com/security/notices?format=md
+standards:
+- id: pci-dss
+  conforms: true
+  evidence: Gain extra security and compliance guarantees needed to deploy applications in line with PCI-DSS requirements.
+- id: hipaa
+  conforms: true
+  evidence: Canonical supports your path towards HIPAA compliance.
+- id: nist-csf
+  conforms: true
+  evidence: Run Ubuntu in high-security environments. Confidently deploy critical workloads while meeting rigorous cybersecurity standards like
+    NIST 800-53, FedRAMP, and CMMC with Ubuntu Pro.
+docs: https://ubuntu.com/security/security-standards?format=md
+note: 6 extracted row(s) were dropped because their quote was not on the page.
