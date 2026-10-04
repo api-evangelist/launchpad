@@ -24,7 +24,7 @@ modified: '2026-09-21'
 tags:
 - Company
 - Collaboration
-- Open-Source
+- Open Source
 - Bug Tracking
 - Code Hosting
 tags_raw:
@@ -33,6 +33,7 @@ tags_raw:
 - OpenSource
 - BugTracking
 - CodeHosting
+- Open-Source
 
 maintainers:
 - FN: Kin Lane
