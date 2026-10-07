@@ -42,6 +42,8 @@ maintainers:
   email: info@apis.io
 
 common:
+- type: Pricing
+  url: https://ubuntu.com/pricing/pro?format=md
 - url: https://blog.launchpad.net/feed
   type: BlogRSS
 - type: Plans
